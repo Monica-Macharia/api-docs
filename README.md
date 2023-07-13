@@ -2,18 +2,8 @@
 
 API documentation template for Vitu Vizuri API
 
-![Screenshot from 2023-07-13 12-53-09]
-(https://github.com/Monica-Macharia/api-docs/assets/106350290/7d9345aa-a0c0-4a9c-aa5b-222f1c6f149f)
 
-Start documenting your API with this configurable theme.
-
-![Aviator template screenshot](images/_screenshot.png)
-
-Aviator was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-
-Find more templates, themes and step-by-step Jekyll tutorials at [CloudCannon Academy](https://learn.cloudcannon.com/).
-
-[![Deploy to CloudCannon](https://buttons.cloudcannon.com/deploy.svg)](https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/aviator-jekyll-template)
+![Screenshot from 2023-07-13 12-53-09](https://github.com/Monica-Macharia/api-docs/assets/106350290/63edeca2-1295-4070-b3ca-131beb46e5f3)
 
 ## Features
 
