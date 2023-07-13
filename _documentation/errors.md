@@ -7,10 +7,9 @@ parameters:
 content_markdown: |-
   | Code | Name | Description |
   | --- | --- | --- |
-  | 200 | OK | Success |
-  | 201 | Created | Creation Successful |
-  | 400 | Bad Request | We could not process that action |
-  | 403 | Forbidden | We couldn't authenticate you |
+  | 400 | Bad Request | Requested operation not sucessful |
+  | 400 | Invalid Body | The request format must be in JSON format |
+  | 404 | Not Found| Resource not found |
 
   All errors will return JSON in the following format:
 left_code_blocks:

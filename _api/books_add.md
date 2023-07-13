@@ -1,36 +1,56 @@
 ---
-title: /books
+title: /carts
 position_number: 1.1
 type: post
-description: Create Book
+description: Create a new product
 parameters:
-  - name: title
-    content: The title for the book
-  - name: score
-    content: The book's score between 0 and 5
+  - name: image
+    content: The image of the product
+  - name: name
+    content: The name of the product
+  - name: description
+    content: A short descrition of the product
+  - name: price
+    content: The price of the product
+  - name: category
+    content: The category of the product
+  
+  
 content_markdown: |-
-  The book will automatically be added to your reading list
+  The product will automatically be added to your product list
   {: .success}
 
-  Adds a book to your collection.
+  Adds a product to your collection.
+
+ 
 left_code_blocks:
   - code_block: |-
-      $.post("http://api.myapp.com/books/", {
-        "token": "YOUR_APP_KEY",
-        "title": "The Book Thief",
-        "score": 4.3
-      }, function(data) {
-        alert(data);
+      fetch("http://127.0.0.1:3000/carts", {
+        method: 'POST',
+        headers:{
+          'Content-Type':'application/json',
+        },
+        body: JSON.stringify({
+          image: "http://unsplash.com",
+          name: "coat",
+          category: "coats"
+          description:"leather coat",
+          price: 50,
+          
+        }),
       });
-    title: jQuery
-    language: javascript
+       
+    title: POST
+    language: Rails
 right_code_blocks:
   - code_block: |-
       {
-        "id": 3,
-        "title": "The Book Thief",
-        "score": 4.3,
-        "dateAdded": "5/1/2015"
+        "id": 30,
+        "image": "http://unsplash.com",
+        "name": "coat",
+        "category": "coats",
+        "description": "leather coat",
+        "price": "coat"
       }
     title: Response
     language: json

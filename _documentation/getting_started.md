@@ -5,22 +5,23 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  Welcome to our API.
+  Welcome to our Vitu Vizuri API.
 
-  This API document is designed for those interested in developing for our platform.
+  The Vitu Vizuri API is a REST-based API that always returns responses in JSON format.
+  In this guide we will be using Ruby on Rails request format.
 
-  This API is still under development and will evolve.
+  Key:
 
-  You'll succeed if you do this.
+  Correct API usage.
   {: .success }
 
-  Here's some useful information.
+  Additional information.
   {: .info }
 
-  Something may not happen if you try and do this.
+  Inaccurate use of the API.
   {: .warning }
 
-  Something bad will happen if you do this.
+  Incorrect API usage, prone to errors.
   {: .error }
 left_code_blocks:
   - code_block:
