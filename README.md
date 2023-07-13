@@ -1,6 +1,10 @@
 # Aviator
 
-API documentation template for Jekyll. Browse through a [live demo](https://tangerine-lemon.cloudvent.net/).
+API documentation template for Vitu Vizuri API
+
+![Screenshot from 2023-07-13 12-53-09]
+(https://github.com/Monica-Macharia/api-docs/assets/106350290/7d9345aa-a0c0-4a9c-aa5b-222f1c6f149f)
+
 Start documenting your API with this configurable theme.
 
 ![Aviator template screenshot](images/_screenshot.png)
