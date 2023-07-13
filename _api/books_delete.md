@@ -1,39 +1,34 @@
 ---
-title: /books/:id
+title: /carts/:id
 position_number: 1.5
 type: delete
-description: Deletes a book
+description: Deletes a product
 parameters:
   - name:
     content:
 content_markdown: |-
-  Deletes a book in your collection.
+  Deletes a product in your collection.
 left_code_blocks:
   - code_block: |-
-      $.ajax({
-        "url": "http://api.myapp.com/books/3",
-        "type": "DELETE",
-        "data": {
-          "token": "YOUR_APP_KEY"
+      fetch(http://127.0.0.1:3000/carts/30, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
         },
-        "success": function(data) {
-          alert(data);
-        }
       });
-    title: jQuery
+    title: React
     language: javascript
 right_code_blocks:
   - code_block: |2-
       {
-        "id": 3,
-        "status": "deleted"
+        
       }
     title: Response
     language: json
   - code_block: |2-
       {
         "error": true,
-        "message": "Book doesn't exist"
+        "message": "Product doesn't exist"
       }
     title: Error
     language: json

@@ -13,13 +13,11 @@ left_code_blocks:
     language:
 right_code_blocks:
   - code_block: |2-
-       $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-         alert(data);
-       });
-    title: JQuery
+      
+    title: 
     language: javascript
   - code_block: |2-
-       curl http://api.myapp.com/books?token=YOUR_APP_KEY
-    title: Curl
+     
+    title: 
     language: bash
 ---

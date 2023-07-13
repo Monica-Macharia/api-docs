@@ -40,8 +40,8 @@ left_code_blocks:
         }),
       });
        
-    title: POST
-    language: Rails
+    title: React
+    language: javascript
 right_code_blocks:
   - code_block: |-
       {

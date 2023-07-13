@@ -1,45 +1,54 @@
 ---
-title: /books/:id
+title: /carts/:id
 position_number: 1.4
 type: put
-description: Update Book
+description: Update a product
 parameters:
-  - name: title
-    content: The title for the book
-  - name: score
-    content: The book's score between 0 and 5
+  - name: image
+    content: The image of the product
+  - name: name
+    content: The name of the product
+  - name: category
+    content: The category of the product
+  - name: description
+    content: The description of the product
+  - name: price
+    content: The price of the product
 content_markdown: |-
-  Update an existing book in your collection.
+  Update an existing product in your collection.
 left_code_blocks:
   - code_block: |-
-      $.ajax({
-        "url": "http://api.myapp.com/books/3",
-        "type": "PUT",
-        "data": {
-          "token": "YOUR_APP_KEY",
-          "score": 5.0,
-          "title": "The Book Stealer"
+      $fetch("http://127.0.0.1:3000/carts/30", {
+        method: 'PUT',
+        headers:{
+          'Content-Type':'application/json',
         },
-        "success": function(data) {
-          alert(data);
-        }
+        body: JSON.stringify({
+          image: "http://unsplash.com",
+          name: "dress",
+          category: "dresses"
+          description:"leather dress",
+          price: 400          
+        }),
       });
-    title: jQuery
+    title: React
     language: javascript
 right_code_blocks:
   - code_block: |2-
       {
-        "id": 3,
-        "title": "The Book Stealer",
-        "score": 5,
-        "dateAdded": "5/1/2015"
+        "id": 30,
+        "image": "http://unsplash.com",
+        "name": "dress",
+        "category": "dresses",
+        "description": "leather dress"
+        "price": 400,        
       }
     title: Response
     language: json
   - code_block: |2-
       {
         "error": true,
-        "message": "Book doesn't exist"
+        "message": "Product doesn't exist"
       }
     title: Error
     language: json
